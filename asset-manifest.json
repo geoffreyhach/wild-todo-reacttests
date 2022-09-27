@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/wild-todo-reacttests/static/css/main.c47f06cb.css",
+    "main.js": "/wild-todo-reacttests/static/js/main.a8d281cb.js",
+    "static/js/787.97a945da.chunk.js": "/wild-todo-reacttests/static/js/787.97a945da.chunk.js",
+    "index.html": "/wild-todo-reacttests/index.html",
+    "main.c47f06cb.css.map": "/wild-todo-reacttests/static/css/main.c47f06cb.css.map",
+    "main.a8d281cb.js.map": "/wild-todo-reacttests/static/js/main.a8d281cb.js.map",
+    "787.97a945da.chunk.js.map": "/wild-todo-reacttests/static/js/787.97a945da.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c47f06cb.css",
+    "static/js/main.a8d281cb.js"
+  ]
+}

@@ -1,0 +1,2 @@
+*{box-sizing:border-box;margin:0;padding:0}body{background-color:tomato;min-height:100vh;padding-top:2rem}.App{align-items:center;background-color:gold;border-radius:10px;display:flex;flex-direction:column;justify-content:center;margin:auto;max-width:min(90vw,900px);padding:1rem}li{list-style:none;margin-bottom:.2rem;min-width:100%}li>span{margin-right:.5rem}ul{margin-top:1rem;min-width:100%}input[type=text]{margin-top:.5rem;padding:.5rem}input[type=submit]{margin-left:1rem;padding:.5rem}
+/*# sourceMappingURL=main.c47f06cb.css.map*/
