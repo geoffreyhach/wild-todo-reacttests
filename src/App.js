@@ -1,25 +1,32 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from "react";
+import Tasks from "./components/Tasks";
+import Input from "./components/Input";
+import TaskCount from "./components/TaskCount";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    const [newTask, setNewTask] = useState("");
+    const [tasks, setTasks] = useState([]);
+
+    const handleChange = (e) => {
+        setNewTask(e.target.value);
+    };
+
+    const handleAdd = () => {
+        setTasks([...tasks, newTask]);
+        document.querySelector("#newtask").value = "";
+    };
+
+    const handleRemove = (index) => {
+        setTasks(tasks.filter((task) => tasks.indexOf(task) !== index));
+    };
+
+    return (
+        <div className="App">
+            <Input onChange={handleChange} onClick={handleAdd} />
+            <Tasks tasks={tasks} onClick={handleRemove} />
+            <TaskCount count={tasks.length} />
+        </div>
+    );
 }
 
 export default App;
